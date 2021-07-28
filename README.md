@@ -1,2 +1,2 @@
 # nathportfolio
-my portfolio, todo list project code for review
+my portfolio,  projects code for review
