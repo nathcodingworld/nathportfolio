@@ -1,0 +1,68 @@
+.pfcard {
+  height: 25rem;
+  width: 35rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.img {
+  margin: 0 auto;
+  height: 100%;
+  transition: filter 400ms;
+}
+.imgicon {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.pfcard:hover .img {
+  filter: blur(3px) brightness(80%);
+}
+.pfcard:hover .btn {
+  opacity: 1;
+  animation: topbotom 700ms ease-out forwards;
+}
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  background-color: white;
+  font-size: 2.2rem;
+  height: 4rem;
+  width: 10rem;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 700ms;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+@keyframes topbotom {
+  0% {
+    transform: translate(-50%, -70%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .pfcard {
+    margin: 0;
+    width: 100%;
+  }
+  .img {
+    margin: 0;
+    width: 100%;
+  }
+}

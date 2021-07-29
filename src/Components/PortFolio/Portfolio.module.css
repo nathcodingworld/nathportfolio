@@ -1,0 +1,92 @@
+.section {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio {
+  height: max-content;
+  width: 120rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.porthead {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.portbtn {
+  height: 100%;
+  width: 25%;
+  border-style: none;
+  font-size: 17px;
+  background-color: transparent;
+}
+
+.portbtn:active {
+  background-color: rgba(171, 240, 240, 0.5);
+}
+
+.design {
+  height: 7px;
+  width: 25%;
+  background-color: aqua;
+  transition: margin-left 700ms;
+}
+.topline {
+  transform: translateY(-100%);
+  height: 50px;
+  width: 100%;
+  background-color: rgba(171, 240, 240, 0.5);
+}
+
+.projects {
+  height: max-content;
+  width: 100%;
+  padding-top: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.foranimation {
+  opacity: 0;
+  animation: pop 700ms ease-out forwards;
+}
+
+@media only screen and (max-width: 1200px) {
+  .portfolio {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .portbtn {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .portbtn {
+    font-size: 10px;
+  }
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(7px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+  }
+}

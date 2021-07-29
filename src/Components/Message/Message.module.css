@@ -1,0 +1,140 @@
+.section {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.message {
+  height: calc(100vh - 27rem);
+  background-color: #252934;
+}
+.contact {
+  height: 100%;
+  width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  justify-content: space-between;
+  height: 50%;
+}
+.label {
+  transform: translateY(150%);
+}
+
+.footer {
+  height: 20rem;
+  background-color: #1b242f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.number {
+  font-size: 2rem;
+}
+
+.inputfield,
+.textfield {
+  background-color: #1e242c;
+  border: none;
+  color: white;
+  font-size: 1.55rem;
+}
+
+.inputfield {
+  height: 12%;
+}
+.textfield {
+  height: 50%;
+}
+
+.btn {
+  height: 10%;
+  width: 100px;
+  background-color: #1b242f;
+  color: white;
+  border: 1px solid white;
+  align-self: flex-end;
+}
+
+.imgicon {
+  height: 140px;
+}
+.year {
+  letter-spacing: 1px;
+  color: crimson;
+  margin-left: 10px;
+}
+.copyright {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 13px;
+}
+@media only screen and (max-width: 1200px) {
+  .contact {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .form {
+    width: 70%;
+  }
+  .label {
+    transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .form {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .form {
+    width: 90%;
+    font-size: 15px;
+    height: 20rem;
+  }
+  .textfield {
+    height: 100px;
+  }
+  .inputfield {
+    height: 30px;
+  }
+  .number {
+    font-size: 1rem;
+  }
+  .footer {
+    height: 10rem;
+  }
+  .message {
+    height: calc(100vh - 17rem);
+  }
+  .imgicon {
+    height: 70px;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+  .btn {
+    height: 20px;
+    width: 50px;
+    font-size: 10px;
+  }
+  .inputfield,
+  .textfield {
+    font-size: 1.2rem;
+  }
+}

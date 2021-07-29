@@ -1,0 +1,51 @@
+.sectionheader {
+  height: 70px;
+  width: 100vw;
+  background-color: #37668d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.design {
+  height: 5px;
+  background-color: aqua;
+}
+
+.nav {
+  width: max-content;
+  color: white;
+  font-size: 20px;
+}
+
+.navs {
+  height: 65px;
+  width: 120rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+}
+
+.links {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: aqua;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navs {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .links {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .links {
+    font-size: 12px;
+  }
+}

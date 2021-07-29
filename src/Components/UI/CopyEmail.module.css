@@ -1,0 +1,55 @@
+.design {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+
+.btn,
+.result {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 200ms ease-out;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.textocopy {
+  font-size: 2rem;
+  transition: filter 700ms ease-out;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  resize: none;
+  overflow: hidden;
+}
+
+.design:hover .btn {
+  opacity: 1;
+  color: aqua;
+  background-color: transparent;
+}
+.design:hover .textocopy {
+  filter: blur(3px) brightness(80%);
+}
+
+.result {
+  opacity: 1;
+  color: lime;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .textocopy {
+    font-size: 1.5rem;
+    width: 230px;
+    height: 23px;
+  }
+}

@@ -1,0 +1,82 @@
+.home {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../Assets/header-bg.png);
+  background-color: slategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pro {
+  align-self: flex-start;
+}
+.name {
+  color: #5dc4ec;
+  animation: intro 2s ease-out;
+  width: max-content;
+  margin-left: 1rem;
+}
+.btn {
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
+  background-color: rgba(0, 128, 128, 0.1);
+  width: 25rem;
+  align-self: center;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media only screen and (max-width: 630px) {
+  .intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .name {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .home {
+    width: 100vw;
+    background-position: center;
+  }
+  .intro {
+    font-size: 3.5rem;
+  }
+  .pro {
+    font-size: 2.5rem;
+  }
+}
