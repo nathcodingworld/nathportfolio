@@ -1,0 +1,315 @@
+.todolist {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.timetable {
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+  height: 75%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.fillintable {
+  position: absolute;
+  bottom: 5%;
+  right: 20%;
+  height: 75%;
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.days {
+  height: 11%;
+  width: 90%;
+  box-shadow: 1px 1px 7px black;
+  border-radius: 2.5px;
+  font-size: 20px;
+  text-align: start;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weeks {
+  height: 16%;
+  width: 90%;
+  box-shadow: 1px 1px 7px black;
+  border-radius: 2.5px;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.months {
+  height: 7%;
+  width: 90%;
+  box-shadow: 1px 1px 7px black;
+  border-radius: 2.5px;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lists {
+  height: 25%;
+  width: 90%;
+  box-shadow: 1px 1px 7px black;
+  border-radius: 2.5px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.events {
+  height: 17%;
+  width: 90%;
+  box-shadow: 1px 1px 7px black;
+  border-radius: 2.5px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.places {
+  height: 15%;
+  width: 90%;
+  box-shadow: 1px 1px 7px black;
+  border-radius: 2.5px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.notes {
+  height: 28%;
+  width: 90%;
+  box-shadow: 1px 1px 7px black;
+  border-radius: 2.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.todos {
+  font-size: 15px;
+  width: 70%;
+  border-bottom: 1px solid black;
+  /* margin: 5px 0; */
+}
+.todoline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  margin-top: 4px;
+}
+.todoinput {
+  width: 70%;
+  align-self: center;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.todolisttitle {
+  margin: 7px;
+  font-size: 20px;
+}
+.number {
+  font-size: 15px;
+  align-self: center;
+}
+.togglebtn {
+  position: absolute;
+  bottom: 80%;
+  left: 20%;
+  height: 20px;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  border-style: none;
+  background-color: transparent;
+  text-shadow: 0.5px 0.5px 3px black;
+}
+.btn:active {
+  text-shadow: 0.5px 0.5px 1px black;
+}
+
+.datestring {
+  position: absolute;
+  bottom: 81%;
+  left: 52%;
+  font-size: 25px;
+}
+
+.delbtn {
+  border-style: none;
+  background-color: transparent;
+  height: 25px;
+}
+
+.delcons {
+  height: 100%;
+}
+
+.notefil {
+  border-style: none;
+  height: 75%;
+  width: 90%;
+  border-radius: 15px;
+  resize: none;
+}
+
+.colorbtn {
+  position: absolute;
+  bottom: 80%;
+  right: 22%;
+  height: 22px;
+  width: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.colors {
+  height: 85%;
+  width: 20px;
+  background-color: white;
+}
+
+.titlehead {
+  position: absolute;
+  top: 3%;
+  left: 35%;
+  height: 110px;
+  width: 50%;
+  font-size: 50px;
+  letter-spacing: 10px;
+  text-decoration: underline;
+  text-shadow: 1px 1px 10px black;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 1000px) {
+  .timetable {
+    width: 33%;
+    left: 10%;
+  }
+  .fillintable {
+    width: 37%;
+    right: 10%;
+  }
+  .colorbtn {
+    height: 22px;
+    width: 90px;
+    right: 10%;
+  }
+  .datestring {
+    bottom: 80%;
+  }
+  .togglebtn {
+    left: 10%;
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .timetable {
+    width: 40%;
+    left: 5%;
+  }
+  .fillintable {
+    width: 45%;
+    right: 5%;
+  }
+  .titlehead {
+    font-size: 30px;
+  }
+  .days,
+  .weeks,
+  .months,
+  .todolisttitle,
+  .todos {
+    font-size: 15px;
+  }
+  .datestring {
+    bottom: 83%;
+  }
+  .togglebtn {
+    left: 5%;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .timetable {
+    width: 45%;
+    left: 1%;
+  }
+  .fillintable {
+    width: 50%;
+    right: 1%;
+  }
+  .titlehead {
+    font-size: 20px;
+  }
+  .datestring {
+    font-size: 17px;
+    left: 50%;
+  }
+  .colorbtn {
+    height: 20px;
+    width: 70px;
+    right: 2%;
+  }
+  .colors {
+    height: 80%;
+    width: 10px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .timetable {
+    width: 48%;
+  }
+  .fillintable {
+    width: 52%;
+  }
+  .days,
+  .weeks,
+  .months,
+  .todolisttitle,
+  .todos {
+    font-size: 12px;
+  }
+  .todoinput {
+    height: 15px;
+  }
+  .todos {
+    text-align: center;
+  }
+  .btn {
+    font-size: 10px;
+    width: max-content;
+  }
+  .togglebtn {
+    left: 1%;
+    width: 50%;
+  }
+}
