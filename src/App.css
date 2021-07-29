@@ -1,0 +1,22 @@
+.rerun-enter {
+  opacity: 0;
+  filter: blur(3px);
+}
+
+.rerun-enter-active {
+  opacity: 1;
+  filter: blur(0);
+  transition: opacity 1000ms ease-out, filter 1000ms ease-out;
+}
+
+.rerun-exit {
+  opacity: 1;
+  filter: blur(0px);
+}
+
+.rerun-exit-active {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-20px);
+  transition: opacity 1000ms ease-out, filter 1000ms ease-out, transform 1000ms ease-out;
+}
